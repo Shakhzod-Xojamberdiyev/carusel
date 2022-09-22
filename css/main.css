@@ -1,0 +1,92 @@
+:root{
+    --main-font-family: "Roboto", "Arial", sans-serif;
+    --main-font-weight: 400;
+    --main-body-bg-color: #fff;
+    --main-text-color: #5a5a5a;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: 
+    url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), 
+    url("../fonts/roboto-v30-latin-regular.woff") format("woff"); 
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+img{
+    display: block;
+    height: auto;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weightt);
+    background-color: var(--main-body-bg-color);
+    overflow-x: hidden;
+}
+
+.site-main{
+    flex-grow: 1;
+}
+
+
+.navbar-toggler:focus{
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) #777;
+}
+
+.carousel-item{
+    height: 35rem;
+}
+
+.circle-img{
+    width: 140px;
+    height: 140px;
+}
+
+.circle-textbox{
+    max-width: 392px;
+    width: 100%;
+}
+
+.info-textbox{
+    max-width: 746px;
+    width: 100%;
+}
+
+.info-text{
+    font-size: 50px;
+}
+
+.info-img{
+    max-width: 500px;
+    width: 100%;
+}
+
+@media only screen and (max-width:992px) {
+    .circle-textbox{
+        width: auto;
+    }
+
+    .info-img{
+        max-width: 276px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .info-img{
+        max-width: 100%;
+    }
+}
